@@ -1,5 +1,5 @@
 jQuery(function($) {
-
+	
 	//Preloader
 	var preloader = $('.preloader');
 	$(window).load(function(){
@@ -157,7 +157,7 @@ jQuery(function($) {
 			infowindow.open(map,marker);
 		});
 	}
-	google.maps.event.addDomListener(window, 'load', initialize_map);
+	google.maps.event.addDomListener(window, 'load', initialize_map);	
 	
 });
 

@@ -42,7 +42,7 @@
 </head><!--/head-->
 
 <body>
-
+  <audio src="songs/hdm.mp3" loop autoplay controls></audio>
   <header id="home">
     <div id="home-slider" class="carousel slide carousel-fade" data-ride="carousel">
       <div class="carousel-inner">
@@ -50,7 +50,7 @@
           <div class="caption">
             <h1 class="animated fadeInLeftBig">Fotografía <span>y Video</span></h1>
             <p class="animated fadeInRightBig">Creatividad - Concepto - Soluciones</p>
-            <a data-scroll class="btn btn-start animated fadeInUpBig" href="#services">COMENZAR</a>
+            <a data-scroll class="btn btn-start animated fadeInUpBig" href="#flashback">COMENZAR</a>
           </div>
           <div id="apDiv1"><img src="images/logo_ext.png" width="238" height="99" alt="logo_ext"></div>
         </div>
@@ -58,7 +58,7 @@
           <div class="caption">
             <h1 class="animated fadeInLeftBig">Diseño <span>Gráfico</span></h1>
             <p class="animated fadeInRightBig">Creatividad - Concepto - Soluciones</p>
-            <a data-scroll class="btn btn-start animated fadeInUpBig" href="#services">Start now</a>
+            <a data-scroll class="btn btn-start animated fadeInUpBig" href="#flashback">COMENZAR</a>
           </div>
           <div id="apDiv1"><img src="images/logo_ext.png" width="238" height="99" alt="logo_ext"></div>
         </div>
@@ -66,7 +66,7 @@
           <div class="caption">
             <h1 class="animated fadeInLeftBig">Impresión <span>Digital</span></h1>
             <p class="animated fadeInRightBig">Creatividad - Concepto - Soluciones</p>
-            <a data-scroll class="btn btn-start animated fadeInUpBig" href="#services">Start now</a>
+            <a data-scroll class="btn btn-start animated fadeInUpBig" href="#flashback">COMENZAR</a>
           </div>
           <div id="apDiv1"><img src="images/logo_ext.png" width="238" height="99" alt="logo_ext"></div>
         </div>
@@ -74,7 +74,7 @@
           <div class="caption">
             <h1 class="animated fadeInLeftBig">Corte y Grabado<span> Laser</span></h1>
             <p class="animated fadeInRightBig">Creatividad - Concepto - Soluciones</p>
-            <a data-scroll class="btn btn-start animated fadeInUpBig" href="#services">Start now</a>
+            <a data-scroll class="btn btn-start animated fadeInUpBig" href="#flashback">COMENZAR</a>
           </div>
           <div id="apDiv1"><img src="images/logo_ext.png" width="238" height="99" alt="logo_ext"></div>
         </div>
@@ -101,6 +101,7 @@
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">                 
             <li class="scroll active"><a href="#home">Home</a></li>
+            <li class="scroll"><a href="#flashback">Historia</a></li>
             <li class="scroll"><a href="#services">Servicios</a></li> 
             <li class="scroll"><a href="#about-us">Dary</a></li>                     
             <li class="scroll"><a href="#portfolio">Portfolio</a></li>
@@ -111,6 +112,57 @@
       </div>
     </div><!--/#main-nav-->
   </header><!--/#home-->
+
+  <section id="flashback">
+    <div class="container">
+      <div class="row col-xs-10 col-xs-offset-1">
+        <h2>Nuestra historia y vida que nos mueve</h2>    
+        <div id="flashback-carousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#flashback-carousel" data-slide-to="0" class="active"></li>
+              <li data-target="#flashback-carousel" data-slide-to="1"></li>
+              <li data-target="#flashback-carousel" data-slide-to="2"></li>
+            </ol>
+          
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <img src="images/flashback/fb1.jpg" alt="Título 1">
+                <div class="carousel-caption">
+                    <h3>Título 1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit aliquet risus eros nec cum, velit congue leo pretium dis dui auctor vestibulum venenatis consequat libero. </p>
+                </div>
+              </div>
+              <div class="item">
+                <img src="images/flashback/fb2.jpg" alt="Título 2">
+                <div class="carousel-caption">
+                    <h3>Título 2</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit aliquet risus eros nec cum, velit congue leo pretium dis dui auctor vestibulum venenatis consequat libero. </p>
+                </div>
+              </div>
+              <div class="item active">
+                <img src="images/flashback/fb3.jpg" alt="Título 3">
+                <div class="carousel-caption">
+                    <h3>Título 3</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit aliquet risus eros nec cum, velit congue leo pretium dis dui auctor vestibulum venenatis consequat libero. </p>
+                </div>
+              </div>             
+            </div>
+          
+            <!-- Controls -->
+            <a class="left carousel-control" href="#flashback-carousel" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Atrás</span>
+            </a>
+            <a class="right carousel-control" href="#flashback-carousel" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Siguiente</span>
+            </a>          
+        </div>
+      </div>
+    </div>
+  </section>
   <section id="services">
     <div class="container">
       <div class="heading wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
@@ -177,8 +229,10 @@
           <div class="about-info wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
             <h2>Estudio Creativo Dary</h2>
             <p>Somos un Estudio Creativo, Profesional y Multidisciplinario, orgullosamente mexicano, dedicado a las soluciones en comunicación y las artes gráficas, como lo son: La Fotografía y video, El Diseño Gráfico, La Impresión y El Corte Laser sobre Diseño. Formado por gente profesional y con gran sentido humano nos comprometemos con la calidad, el servicio y la innovación, otorgando siempre y en cada detalle las soluciones inmediatas y sostenibles de nuestros servicios.<br>
-La comunicación y la tecnología son nuestros aliados permanentes, respetamos todas las ideas y proponemos en equipo las mejores soluciones. Te invitamos a que nos conozcas y nos permitas trabajar para ti. "Soluciones hay muchas, bien pensadas pocas, únicas, funcionales y Sostenibles te las ofrecemos nosotros..."</p>
-          </div></div><div class="col-sm-6">
+La comunicación y la tecnología son nuestros aliados permanentes, respetamos todas las ideas y proponemos en equipo las mejores soluciones. Te invitamos a que nos conozcas y nos permitas trabajar para ti. "Soluciones hay muchas, bien pensadas pocas, únicas, funcionales y Sostenibles te las ofrecemos nosotros..."</p>                                          
+          </div>
+        </div>
+        <div class="col-sm-6">
           <div class="our-skills wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
             <div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
               <p class="lead">Nuestra Experiencia</p>
@@ -210,6 +264,27 @@ La comunicación y la tecnología son nuestros aliados permanentes, respetamos t
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+        <div class="row">&nbsp;</div>
+        <div class="row">
+          <div class="col-sm-4 wow col-values" data-wow-duration="1000ms" data-wow-delay="600ms">
+              <h2>Misión</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipiscing elit nunc, placerat ante ridiculus ligula hac natoque varius non platea, potenti duis massa risus montes urna malesuada. Nam phasellus imperdiet venenatis natoque lacinia primis orci, erat volutpat nulla quis integer metus diam pulvinar, gravida mattis facilisi sociis ligula platea. </p>
+          </div>
+          <div class="col-sm-4 wow col-values" data-wow-duration="1000ms" data-wow-delay="600ms">
+              <h2>Visión</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipiscing elit nunc, placerat ante ridiculus ligula hac natoque varius non platea, potenti duis massa risus montes urna malesuada. Nam phasellus imperdiet venenatis natoque lacinia primis orci, erat volutpat nulla quis integer metus diam pulvinar, gravida mattis facilisi sociis ligula platea. </p>
+          </div>
+          <div class="col-sm-4 wow col-values" data-wow-duration="1000ms" data-wow-delay="600ms">
+              <h2>Valores</h2>
+              <ul>
+                <li>Lorem ipsum dolor sit amet consectetur adipiscing elit nunc</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipiscing elit nunc</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipiscing elit nunc</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipiscing elit nunc</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipiscing elit nunc</li>
+              </ul>
           </div>
         </div>
       </div>
