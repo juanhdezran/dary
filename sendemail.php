@@ -1,18 +1,15 @@
 <?php
-$name       = @trim(stripslashes($_POST['name'])); 
-$from       = @trim(stripslashes($_POST['email'])); 
-$subject    = @trim(stripslashes($_POST['subject'])); 
-$message    = @trim(stripslashes($_POST['message'])); 
-$to   		= 'estudio@fotodary.com';
 
-$headers   = array();
-$headers[] = "MIME-Version: 1.0";
-$headers[] = "Content-type: text/html; charset=iso-8859-1";
-$headers[] = "From: Sender Name <fotodary@hotmail.com>";
-$headers[] = "Reply-To: <{$from}>";
-$headers[] = "Subject: {$subject}";
-$headers[] = "X-Mailer: PHP/".phpversion();
+$headers   = '';
+$headers .= "From: estudio@fotodary.com";
+$headers .= "Reply-To: estudio@fotodary.com";
+$headers .= "X-Mailer: PHP/".phpversion();
 
-mail($to, $subject, $message, $headers);
+$message = 'Nombre: ' . $_POST['name'];
+$message .= ' Email: ' . $_POST['email'];
+$message .= ' Asunto: ' . $_POST['subject'];
+$message .= ' Mensaje: ' . $_POST['message'];
 
-die;
+$res = mail('juanhdezran@gmail.com', 'Nuevo Contacto', $message, $headers);
+
+return $res;
