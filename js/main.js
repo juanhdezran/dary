@@ -128,6 +128,7 @@ jQuery(function($) {
 		$.ajax({
 			type: 'POST',
 			url: $(this).attr('action'),
+			data: post,
 			beforeSend: function(){
 				form.prepend( form_status.html('<p><i class="fa fa-spinner fa-spin"></i> Enviando Email ...</p>').fadeIn() );
 			}
