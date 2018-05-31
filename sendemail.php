@@ -12,6 +12,6 @@ $message .= ' Email: ' . $_POST['email'] . '<br>';
 $message .= ' Asunto: ' . $_POST['subject'] . '<br>';
 $message .= ' Mensaje: ' . $_POST['message'] . '<br>';
 
-$res = mail('juanhdezran@gmail.com', 'Nuevo Contacto', $message, $headers);
+$res = mail('fotodary@hotmail.com', 'Nuevo Contacto', $message, $headers);
 
 return $res;
